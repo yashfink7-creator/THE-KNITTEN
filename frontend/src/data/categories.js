@@ -1,0 +1,55 @@
+const categories = [
+  {
+    id: 1,
+    name: 'Toys & Dolls',
+    slug: 'toys-dolls',
+    emoji: '🐰',
+    bg: '#f6e3d7',
+    photo: 'https://images.unsplash.com/photo-1775484105320-e132d781a416?fm=jpg&q=80&w=1200&auto=format&fit=crop',
+    description: 'Cuddly amigurumi animals and dolls, hand-stitched for little ones.',
+  },
+  {
+    id: 2,
+    name: 'Bags & Purses',
+    slug: 'bags-purses',
+    emoji: '👜',
+    bg: '#f4dde0',
+    description: 'Everyday totes and purses crocheted from durable cotton yarn.',
+  },
+  {
+    id: 3,
+    name: 'Wearables',
+    slug: 'wearables',
+    emoji: '👒',
+    bg: '#e7dcf2',
+    photo: 'https://images.unsplash.com/photo-1544967919-44c1ef2f9e7a?fm=jpg&q=80&w=1200&auto=format&fit=crop',
+    description: 'Hats, scarves and wearable pieces for every season.',
+  },
+  {
+    id: 4,
+    name: 'Home Decor',
+    slug: 'home-decor',
+    emoji: '🏡',
+    bg: '#e6ded1',
+    photo: 'https://images.unsplash.com/photo-1776721977064-d4e5389db6b9?fm=jpg&q=80&w=1200&auto=format&fit=crop',
+    description: 'Wall hangings, coasters and cozy accents for your space.',
+  },
+  {
+    id: 5,
+    name: 'Flowers',
+    slug: 'flowers',
+    emoji: '💐',
+    bg: '#f8e9ea',
+    description: 'Everlasting crochet bouquets that never wilt.',
+  },
+  {
+    id: 6,
+    name: 'Accessories',
+    slug: 'accessories',
+    emoji: '🔑',
+    bg: '#f0e6df',
+    description: 'Keychains, charms and small crochet accessories.',
+  },
+];
+
+export default categories;

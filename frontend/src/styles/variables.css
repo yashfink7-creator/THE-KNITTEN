@@ -1,0 +1,42 @@
+:root {
+  /* Brand colors */
+  --color-bg: #fffaf5;
+  --color-cream: #fbf1e7;
+  --color-cream-soft: #fdf6ef;
+  --color-blush: #f4dde0;
+  --color-blush-soft: #f8e9ea;
+  --color-rose: #c17f89;
+  --color-rose-dark: #a3626d;
+  --color-rose-light: #e3aab1;
+  --color-white: #ffffff;
+
+  --color-text: #4a3b3d;
+  --color-text-soft: #7c6a6c;
+  --color-text-muted: #a49495;
+  --color-heading: #3a2a2c;
+
+  --color-border: #ecdfd8;
+  --color-star: #f3b23b;
+  --color-success: #6b9a6f;
+  --color-danger: #c65b5b;
+  --color-info: #5b8ac6;
+
+  /* Fonts */
+  --font-script: 'Dancing Script', cursive;
+  --font-body: 'Poppins', system-ui, sans-serif;
+  --font-serif: 'Fraunces', 'Georgia', serif;
+
+  /* Radii + shadows */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(58, 42, 44, 0.06);
+  --shadow-md: 0 8px 24px rgba(58, 42, 44, 0.08);
+  --shadow-lg: 0 16px 40px rgba(58, 42, 44, 0.12);
+
+  --container-width: 1280px;
+
+  color-scheme: light;
+}

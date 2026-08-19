@@ -1,0 +1,38 @@
+.custom-orders-form label,
+.contact-form label,
+.admin-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-heading);
+}
+
+.custom-orders-form input,
+.custom-orders-form textarea,
+.contact-form input,
+.contact-form textarea,
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  font-size: 13.5px;
+  color: var(--color-text);
+  outline: none;
+  font-weight: 400;
+  resize: vertical;
+}
+
+.custom-orders-form input:focus,
+.custom-orders-form textarea:focus,
+.contact-form input:focus,
+.contact-form textarea:focus,
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+  border-color: var(--color-rose-light);
+}
