@@ -1,0 +1,48 @@
+.admin-gate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-cream);
+  padding: 24px;
+}
+
+.admin-gate-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.admin-gate-card h2 {
+  font-size: 20px;
+}
+
+.admin-gate-card p {
+  font-size: 13px;
+  color: var(--color-text-soft);
+}
+
+.admin-gate-card input {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+}
+
+.admin-gate-card input:focus {
+  border-color: var(--color-rose-light);
+}
+
+.admin-gate-error {
+  color: var(--color-danger);
+  font-size: 12.5px;
+}

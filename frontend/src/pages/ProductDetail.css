@@ -26,6 +26,11 @@
   position: relative;
 }
 
+.gallery-main .placeholder-image.photo img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
 .gallery-badge {
   position: absolute;
   top: 16px;
