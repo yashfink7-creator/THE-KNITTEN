@@ -1,6 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import products from '../data/products';
 import categories from '../data/categories';
 import ProductCard from '../components/product/ProductCard';
 import { SearchIcon } from '../components/common/Icons';
@@ -26,6 +25,36 @@ function Shop() {
   const [sort, setSort] = useState('featured');
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [search, setSearch] = useState('');
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+// to fetch the products from the backend API
+  useEffect(() => {
+  fetch('http://localhost/the-knitten/backend/api/products/get-products.php')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Failed to fetch products');
+      }
+
+      return response.json();
+    })
+    .then((data) => {
+      if (data.success) {
+        setProducts(data.products);
+      } else {
+        setError(data.message || 'Failed to load products.');
+      }
+    })
+    .catch((err) => {
+      console.error('Product API error:', err);
+      setError('Unable to load products.');
+    })
+    .finally(() => {
+      setLoading(false);
+    });
+}, []);
+
 
   function toggleCategory(slug) {
     setSelectedCategories((prev) =>
@@ -56,7 +85,7 @@ function Shop() {
         break;
     }
     return list;
-  }, [selectedCategories, maxPrice, sort, search]);
+}, [products, selectedCategories, maxPrice, sort, search]);
 
   return (
     <div className="shop-page">
@@ -130,15 +159,21 @@ function Shop() {
             </select>
           </div>
 
-          {filteredProducts.length > 0 ? (
-            <div className="shop-grid">
-              {filteredProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          ) : (
-            <p className="shop-empty">No products match your filters. Try adjusting them.</p>
-          )}
+          {loading ? (
+  <p className="shop-empty">Loading products...</p>
+) : error ? (
+  <p className="shop-empty">{error}</p>
+) : filteredProducts.length > 0 ? (
+  <div className="shop-grid">
+    {filteredProducts.map((product) => (
+      <ProductCard key={product.id} product={product} />
+    ))}
+  </div>
+) : (
+  <p className="shop-empty">
+    No products match your filters. Try adjusting them.
+  </p>
+)}
         </div>
       </div>
     </div>
