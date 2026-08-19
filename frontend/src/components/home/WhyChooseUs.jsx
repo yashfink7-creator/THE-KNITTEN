@@ -27,7 +27,13 @@ function WhyChooseUs() {
           </div>
         </div>
         <div className="why-image">
-          <PlaceholderImage emoji="🧶" bg="#f2d3d6" rounded />
+          <PlaceholderImage
+            emoji="🧶"
+            bg="#f2d3d6"
+            sources={['/images/hero/why-choose-yarn.jpg', 'https://images.unsplash.com/photo-1604510493959-8a20b3630d53?fm=jpg&q=80&w=1200&auto=format&fit=crop']}
+            alt="Pink crochet yarn"
+            rounded
+          />
         </div>
       </div>
     </section>

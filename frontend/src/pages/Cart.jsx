@@ -39,7 +39,12 @@ function Cart() {
           {items.map((item) => (
             <div className="cart-item" key={item.id}>
               <div className="cart-item-image">
-                <PlaceholderImage emoji={item.emoji} bg={item.bg} />
+                <PlaceholderImage
+                  emoji={item.emoji}
+                  bg={item.bg}
+                  sources={[item.image, item.photo]}
+                  alt={item.name}
+                />
               </div>
               <div className="cart-item-info">
                 <Link to={`/product/${item.slug}`} className="cart-item-name">

@@ -20,7 +20,13 @@ function AboutUs() {
       <section className="section about-story">
         <div className="container about-story-inner">
           <div className="about-image">
-            <PlaceholderImage emoji="🧵" bg="#f4dde0" className="lg" />
+            <PlaceholderImage
+              emoji="🧵"
+              bg="#f4dde0"
+              sources={['/images/hero/about-story.jpg']}
+              alt="The Knitten crochet studio"
+              className="lg"
+            />
           </div>
           <div className="about-text">
             <span className="eyebrow">Our Story</span>

@@ -10,6 +10,7 @@ import CustomOrders from './pages/CustomOrders';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
+import AdminGate from './admin/components/AdminGate';
 import AdminLayout from './admin/components/AdminLayout';
 import Dashboard from './admin/pages/Dashboard';
 import AdminProducts from './admin/pages/AdminProducts';
@@ -34,7 +35,14 @@ function App() {
               <Route path="/cart" element={<Cart />} />
             </Route>
 
-            <Route path="/admin" element={<AdminLayout />}>
+            <Route
+              path="/admin"
+              element={
+                <AdminGate>
+                  <AdminLayout />
+                </AdminGate>
+              }
+            >
               <Route index element={<Dashboard />} />
               <Route path="products" element={<AdminProducts />} />
               <Route path="orders" element={<AdminOrders />} />

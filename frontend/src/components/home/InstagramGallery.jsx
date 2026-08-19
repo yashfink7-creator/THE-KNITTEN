@@ -2,11 +2,11 @@ import PlaceholderImage from '../common/PlaceholderImage';
 import './InstagramGallery.css';
 
 const GALLERY_ITEMS = [
-  { emoji: '👜', bg: '#f0e6c9' },
-  { emoji: '🧸', bg: '#eeddc8' },
-  { emoji: '🌻', bg: '#f6e2b8' },
-  { emoji: '🔑', bg: '#f0e2e5' },
-  { emoji: '🌸', bg: '#f4e9d8' },
+  { emoji: '👜', bg: '#f0e6c9', image: '/images/products/crochet-clutch-purse.jpg', alt: 'Crochet Clutch Purse' },
+  { emoji: '🦆', bg: '#eeddc8', image: '/images/products/crochet-duck.jpg', alt: 'Crochet Duck' },
+  { emoji: '🌼', bg: '#f6e2b8', image: '/images/products/crochet-daisy-bouquet.jpg', alt: 'Crochet Daisy Bouquet' },
+  { emoji: '💗', bg: '#f0e2e5', image: '/images/products/crochet-heart-keychain.jpg', alt: 'Crochet Heart Keychain' },
+  { emoji: '🌹', bg: '#f4e9d8', image: '/images/products/crochet-coaster-set.jpg', alt: 'Crochet Coaster Set' },
 ];
 
 function InstagramGallery() {
@@ -26,7 +26,7 @@ function InstagramGallery() {
         <div className="instagram-grid">
           {GALLERY_ITEMS.map((item, i) => (
             <div className="instagram-item" key={i}>
-              <PlaceholderImage emoji={item.emoji} bg={item.bg} rounded={false} />
+              <PlaceholderImage emoji={item.emoji} bg={item.bg} sources={[item.image]} alt={item.alt} rounded={false} />
             </div>
           ))}
         </div>
