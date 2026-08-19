@@ -17,7 +17,7 @@ function Collections() {
         <div className="collections-grid">
           {categories.map((cat) => (
             <Link to={`/shop?category=${cat.slug}`} key={cat.id} className="collection-banner">
-              <PlaceholderImage emoji={cat.emoji} bg={cat.bg} photo={cat.photo} alt={cat.name} rounded={false} />
+              <PlaceholderImage emoji={cat.emoji} bg={cat.bg} sources={[cat.image, cat.photo]} alt={cat.name} rounded={false} />
               <div className="collection-banner-overlay">
                 <h3>{cat.name}</h3>
                 <span>Shop Now →</span>

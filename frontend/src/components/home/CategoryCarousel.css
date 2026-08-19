@@ -10,6 +10,7 @@
 
 .category-track {
   display: flex;
+  justify-content: safe center;
   gap: 22px;
   overflow-x: auto;
   scroll-snap-type: x proximity;

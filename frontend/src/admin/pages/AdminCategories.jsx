@@ -66,7 +66,7 @@ function AdminCategories() {
         {categories.map((cat) => (
           <div className="category-manage-card" key={cat.id}>
             <div className="category-manage-thumb">
-              <PlaceholderImage emoji={cat.emoji} bg={cat.bg} photo={cat.photo} alt={cat.name} className="sm" />
+              <PlaceholderImage emoji={cat.emoji} bg={cat.bg} sources={[cat.image, cat.photo]} alt={cat.name} className="sm" />
             </div>
             <div className="category-manage-info">
               <h4>{cat.name}</h4>

@@ -5,7 +5,7 @@ const categories = [
     slug: 'toys-dolls',
     emoji: '🐰',
     bg: '#f6e3d7',
-    photo: 'https://images.unsplash.com/photo-1775484105320-e132d781a416?fm=jpg&q=80&w=1200&auto=format&fit=crop',
+    image: '/images/products/crochet-bunny-rabbit.jpg',
     description: 'Cuddly amigurumi animals and dolls, hand-stitched for little ones.',
   },
   {
@@ -14,6 +14,7 @@ const categories = [
     slug: 'bags-purses',
     emoji: '👜',
     bg: '#f4dde0',
+    image: '/images/products/crochet-flower-tote-bag.jpg',
     description: 'Everyday totes and purses crocheted from durable cotton yarn.',
   },
   {
@@ -22,7 +23,7 @@ const categories = [
     slug: 'wearables',
     emoji: '👒',
     bg: '#e7dcf2',
-    photo: 'https://images.unsplash.com/photo-1544967919-44c1ef2f9e7a?fm=jpg&q=80&w=1200&auto=format&fit=crop',
+    image: '/images/products/crochet-beanie.jpg',
     description: 'Hats, scarves and wearable pieces for every season.',
   },
   {
@@ -31,7 +32,7 @@ const categories = [
     slug: 'home-decor',
     emoji: '🏡',
     bg: '#e6ded1',
-    photo: 'https://images.unsplash.com/photo-1776721977064-d4e5389db6b9?fm=jpg&q=80&w=1200&auto=format&fit=crop',
+    image: '/images/products/crochet-macrame-wall-decor.jpg',
     description: 'Wall hangings, coasters and cozy accents for your space.',
   },
   {
@@ -40,6 +41,7 @@ const categories = [
     slug: 'flowers',
     emoji: '💐',
     bg: '#f8e9ea',
+    image: '/images/products/crochet-sunflower-bouquet.jpg',
     description: 'Everlasting crochet bouquets that never wilt.',
   },
   {
@@ -48,6 +50,7 @@ const categories = [
     slug: 'accessories',
     emoji: '🔑',
     bg: '#f0e6df',
+    image: '/images/products/crochet-bear-keychain.jpg',
     description: 'Keychains, charms and small crochet accessories.',
   },
 ];

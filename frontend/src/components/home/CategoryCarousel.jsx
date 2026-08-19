@@ -37,7 +37,7 @@ function CategoryCarousel() {
             {categories.map((cat) => (
               <Link to={`/shop?category=${cat.slug}`} key={cat.id} className="category-item">
                 <div className="category-thumb">
-                  <PlaceholderImage emoji={cat.emoji} bg={cat.bg} photo={cat.photo} alt={cat.name} />
+                  <PlaceholderImage emoji={cat.emoji} bg={cat.bg} sources={[cat.image, cat.photo]} alt={cat.name} />
                 </div>
                 <span>{cat.name}</span>
               </Link>
